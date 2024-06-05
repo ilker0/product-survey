@@ -1,0 +1,33 @@
+api_version = "2023-10"
+
+[capabilities]
+api_access = true
+network_access = true
+block_progress = true
+
+[[extensions]]
+type = "ui_extension"
+name = "order-status-thank-you"
+handle = "order-status-thank-you"
+[[extensions.targeting]]
+target = "purchase.thank-you.block.render"
+module = "./src/Checkout.jsx"
+export = "thankYouBlock"
+
+[[extensions.targeting]]
+target = "customer-account.order-status.block.render"
+module = "./src/Checkout.jsx"
+export = "orderDetailsBlock"
+
+
+# [[extensions.metafields]]
+# namespace = "my-namespace"
+# key = "my-key"
+
+# Read more on extension settings at https://shopify.dev/api/checkout-extensions/checkout/configuration
+# [settings]
+#   [[settings.fields]]
+#   key = "banner_title"
+#   type = "single_line_text_field"
+#   name = "Banner title"
+#   description = "Enter a title for the banner"
