@@ -128,7 +128,7 @@ function ProductReview() {
   }
 
   // Hides the survey if the product has already been reviewed
-  if (productReviewed.loading || productReviewed.data) {
+  if (productReviewed.loading || productReviewed.data || products.length < 3) {
     return null;
   }
 
