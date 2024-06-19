@@ -75,7 +75,7 @@ function Attribution() {
   if (
     attributionSubmitted.loading ||
     attributionSubmitted.data === true ||
-    products.length < 3
+    products.length < 2
   ) {
     return null;
   }
@@ -128,7 +128,7 @@ function ProductReview() {
   }
 
   // Hides the survey if the product has already been reviewed
-  if (productReviewed.loading || productReviewed.data || products.length < 3) {
+  if (productReviewed.loading || productReviewed.data || products.length < 2) {
     return null;
   }
 

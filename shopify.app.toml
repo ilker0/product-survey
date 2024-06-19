@@ -3,7 +3,7 @@
 client_id = "7764ad14b9a24e501a7fdfd39c12c159"
 name = "product-survey"
 handle = "product-survey"
-application_url = "https://plasma-see-anaheim-animation.trycloudflare.com"
+application_url = "https://messenger-lock-newer-win.trycloudflare.com"
 embedded = true
 
 [build]
@@ -17,9 +17,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://plasma-see-anaheim-animation.trycloudflare.com/auth/callback",
-  "https://plasma-see-anaheim-animation.trycloudflare.com/auth/shopify/callback",
-  "https://plasma-see-anaheim-animation.trycloudflare.com/api/auth/callback"
+  "https://messenger-lock-newer-win.trycloudflare.com/auth/callback",
+  "https://messenger-lock-newer-win.trycloudflare.com/auth/shopify/callback",
+  "https://messenger-lock-newer-win.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
